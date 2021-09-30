@@ -11,6 +11,8 @@ import Employee from './components/Employee/Employee';
 import NotFound from './components/NotFound/NotFound';
 import SingleEmployee from './components/SingleEmployee/SingleEmployee';
 import Menubar from './components/Menubar/Menubar';
+import PostDetails from './components/PostDetails/PostDetails';
+
 
 
 
@@ -23,6 +25,9 @@ function App() {
 
           <Route exact path="/">
             <Home></Home>
+          </Route>
+          <Route path="/posts/:postId">
+            <PostDetails></PostDetails>
           </Route>
           <Route exact path="/home">
             <Home></Home>
